@@ -10,19 +10,12 @@
 * Collection 接口
   * List
     * [ArrayList源码剖析](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&amp;mid=2247484097&amp;idx=1&amp;sn=a679c2dd41c843f2c47663d6c2713342&amp;chksm=fa6bcf6dcd1c467b2c2832cf966193400aac3cba07b21428b466372576c85a016bbd2d2de4fa&token=1968072164&lang=zh_CN#rd)
-    * LinkedList
-    * Vector
   * Set
     * HashSet
-    * LinkedHashSet
-    * TreeSet
 * Map接口
   * HashMap
   * Hashtable
-  * LinkedHashMap
   * TreeMap
-  * Properties
-* Collections工具类
 
 **多线程与高并发**：
 
