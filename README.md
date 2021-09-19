@@ -43,8 +43,8 @@
 
 #### Redis
 
-* 01 Redis入门安装
-* 02 Redis-配置文件
+* [01 Redis入门安装](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/01%20Redis%E5%85%A5%E9%97%A8%E5%AE%89%E8%A3%85.md)
+* [02 Redis-配置文件](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/02%20Redis-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
 * [03 Redis-持久化](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&amp;mid=2247484206&amp;idx=1&amp;sn=b1493225f6b2dbff86b423522db9a00d&amp;chksm=fa6bce82cd1c4794b1b773fd3330f4714df357910f9195a7919846e58522c77e7c104ec2eab3&token=1526737620&lang=zh_CN#rd)
 * 04 Redis-事务
 * 05 Redis-订阅
