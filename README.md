@@ -1,8 +1,6 @@
 ## 介绍：
 该仓涵盖Java基础、多线程高并发、mysql、Redis、JVM、数据结构与算法、计算机组成原理、计算机操作系统、计算机网络、微服务等知识。
-
-(大家记得Star哟！)
-希望能和大家有点东西(大家记得Star哟！)
+希望能和大家有点东西(大家记得Star哟）
 
 
 
@@ -42,6 +40,15 @@
 * 堆
 * 方法区
 * GC
+
+#### Redis
+
+* 01 Redis入门安装
+* 02 Redis-配置文件
+* [03 Redis-持久化](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&amp;mid=2247484206&amp;idx=1&amp;sn=b1493225f6b2dbff86b423522db9a00d&amp;chksm=fa6bce82cd1c4794b1b773fd3330f4714df357910f9195a7919846e58522c77e7c104ec2eab3&token=1526737620&lang=zh_CN#rd)
+* 04 Redis-事务
+* 05 Redis-订阅
+* 06 Redis-主从复制
 
 #### MYSQL数据库
 
