@@ -43,16 +43,18 @@
 
 #### 设计模式
 
-* 单例模式
+* [单例模式](https://github.com/niutongg/JavaLeague/blob/main/basic/19%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/01%20%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F.md)
 
 #### Redis
 
 * [01 Redis-5种数据结构](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/01%20Redis%E5%85%A5%E9%97%A8%E5%AE%89%E8%A3%85.md)
 * [02 Redis-配置文件](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/02%20Redis-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
 * [03 Redis-持久化](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&amp;mid=2247484206&amp;idx=1&amp;sn=b1493225f6b2dbff86b423522db9a00d&amp;chksm=fa6bce82cd1c4794b1b773fd3330f4714df357910f9195a7919846e58522c77e7c104ec2eab3&token=1526737620&lang=zh_CN#rd)
-* 04 Redis-事务
-* 05 Redis-订阅
-* 06 Redis-主从复制
+* [04 Redis-事务](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/04%20Redis-%E4%BA%8B%E5%8A%A1.md)
+* [05 Redis-订阅](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/05%20Redis-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85.md)
+* [06 Redis-主从复制](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/06%20Redis-%E5%A4%8D%E5%88%B6.md)
+* [07 Redis-哨兵模式](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/07%20Redis-%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F.md)
+* [08 Redis-Jedis](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/08%20Redis-Jedis.md)
 
 #### MYSQL数据库
 
