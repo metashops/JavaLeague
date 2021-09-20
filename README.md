@@ -41,9 +41,13 @@
 * 方法区
 * GC
 
+#### 设计模式
+
+* 单例模式
+
 #### Redis
 
-* [01 Redis入门安装](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/01%20Redis%E5%85%A5%E9%97%A8%E5%AE%89%E8%A3%85.md)
+* [01 Redis-5种数据结构](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/01%20Redis%E5%85%A5%E9%97%A8%E5%AE%89%E8%A3%85.md)
 * [02 Redis-配置文件](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/02%20Redis-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
 * [03 Redis-持久化](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&amp;mid=2247484206&amp;idx=1&amp;sn=b1493225f6b2dbff86b423522db9a00d&amp;chksm=fa6bce82cd1c4794b1b773fd3330f4714df357910f9195a7919846e58522c77e7c104ec2eab3&token=1526737620&lang=zh_CN#rd)
 * 04 Redis-事务
@@ -55,6 +59,10 @@
 * [小白必看的mysql基础6600字够了](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&tempkey=MTEzMV9pY0lrQnZwbW5BNEtNdzlBNnJQVmZMbTFsSzg0ZlI2VlM4QmhsNFNKMUdRMzhyc1NkYkV0bUZWS0p6MC1hX2xlZ2hFVXhQODRldEhueE9kRWlaaGNLX2FiSVlzcTBESWNydkdaQjhEMEtpaUR5TGdCelhqXzljTXgzLXFCbTljSVN6X0JndHUtd28xOEE2NndzZEtjQ3ZFOUx0dzI3UU03THpVUkNRfn4%3D&chksm=7a6bce884d1c479eef00492a13ae38966438d7a0f7272aa7a7535c4a6c08fbb57f472d780f58#rd)
 
 
+
+#### 福利
+
+电子书
 
 更新中耐心等待。。。
 
