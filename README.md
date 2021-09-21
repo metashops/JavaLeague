@@ -45,16 +45,22 @@
 
 * [单例模式](https://github.com/niutongg/JavaLeague/blob/main/basic/19%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/01%20%E5%8D%95%E5%88%97%E6%A8%A1%E5%BC%8F.md)
 
-#### Redis
+#### Redis基础
 
-* [01 Redis-5种数据结构](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/01%20Redis%E5%85%A5%E9%97%A8%E5%AE%89%E8%A3%85.md)
-* [02 Redis-配置文件](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/02%20Redis-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
-* [03 Redis-持久化](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&amp;mid=2247484206&amp;idx=1&amp;sn=b1493225f6b2dbff86b423522db9a00d&amp;chksm=fa6bce82cd1c4794b1b773fd3330f4714df357910f9195a7919846e58522c77e7c104ec2eab3&token=1526737620&lang=zh_CN#rd)
-* [04 Redis-事务](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/04%20Redis-%E4%BA%8B%E5%8A%A1.md)
-* [05 Redis-订阅](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/05%20Redis-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85.md)
-* [06 Redis-主从复制](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/06%20Redis-%E5%A4%8D%E5%88%B6.md)
-* [07 Redis-哨兵模式](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/07%20Redis-%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F.md)
-* [08 Redis-Jedis](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/08%20Redis-Jedis.md)
+* [01 Redis6-5种数据结构](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/01%20Redis6-5%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
+* [02 Redis6-配置文件](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/02%20Redis6-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.md)
+* [03 Redis6-持久化](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/03%20Redis6-%E6%8C%81%E4%B9%85%E5%8C%96.md)
+* [04 Redis6-事务](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/04%20Redis6-%E4%BA%8B%E5%8A%A1.md)
+* [05 Redis6-发布订阅](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/05%20Redis6-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85.md)
+* [06 Redis6-复制](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/06%20Redis6-%E5%A4%8D%E5%88%B6.md)
+* [07 Redis6-哨兵模式](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/07%20Redis6-%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F.md)
+* [08 Redis6-Jedis](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/08%20Redis6-Jedis.md)
+* [09 Redis6-其他数据结构](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/09%20Redis6-%E5%85%B6%E4%BB%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)
+* [10 Redis6-穿透|击穿|雪崩](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/10%20Redis6-%E7%A9%BF%E9%80%8F%7C%E5%87%BB%E7%A9%BF%7C%E9%9B%AA%E5%B4%A9.md)
+* [11 Redis6-分布式锁](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/11%20Redis6-%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81.md)
+* [12 Redis6-新功能介绍](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/12%20Redis6-%E6%96%B0%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D.md)
+* [13 Redis6-SpringBoot整合](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/13%20Redis6-SpringBoot%E6%95%B4%E5%90%88.md)
+* [14 Redis6-配置参考说明](https://github.com/niutongg/JavaLeague/blob/main/basic/09%20Redis/14%20Redis6-%E9%85%8D%E7%BD%AE%E5%8F%82%E8%80%83%E8%AF%B4%E6%98%8E.md)
 
 #### MYSQL数据库
 
@@ -64,7 +70,7 @@
 
 #### 福利
 
-电子书
+[电子书](https://github.com/niutongg/JavaLeague/blob/main/basic/20%20%E6%94%B6%E8%97%8F%E4%B9%A6%E7%B1%8D/e-book.md)
 
 更新中耐心等待。。。
 
