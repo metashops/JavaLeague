@@ -331,7 +331,11 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 在set基础上，加上一个score值，之前set是k1 v1 k2 v2,现在zset是k1 score v1 score v2
 
-（1）zadd/zrang/
+（1）zadd/zrang/(添加/获取)
+
+zrange zset01 0 -1 withscores：是全部获取
+
+zrange zset01 0 -1：只获取v1 ~ v5
 
 ```
 127.0.0.1:6379> zadd zset01 10  v1 20 v2 30 v3 40 v4 50 v5 60 v6
@@ -360,11 +364,96 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 （2）zrangebyscore key 开始 score 结束 score
 
+获取60～90之间的
 
+```
+127.0.0.1:6379> zrangebyscore zset01 60 90
+1) "v1"
+2) "v2"
+3) "v3"
+4) "v4"
+```
 
+加`(`不包含的
 
+```
+127.0.0.1:6379> zrangebyscore zset01 (60 (90
+1) "v2"
+2) "v3"
+```
 
+limit获取部分的
 
+```
+127.0.0.1:6379> zrangebyscore zset01 60 90 limit 2 2
+1) "v3"
+2) "v4"
+```
+
+（3）zrem key 某score下对应的value值，作用是删除元素
+
+```
+127.0.0.1:6379> zrem zset01 v5
+(integer) 1
+```
+
+（4）zcard / zcount key score区间/zrank key values值，作用是获取下标值/zscore key对应值
+
+```
+127.0.0.1:6379> zrange zset01 0 -1 withscores
+ 1) "v1"
+ 2) "60"
+ 3) "v2"
+ 4) "70"
+ 5) "v3"
+ 6) "80"
+ 7) "v4"
+ 8) "90"
+ 9) "v5"
+10) "100"
+# zcard统计全部
+127.0.0.1:6379> zcard zset01
+(integer) 4
+# 统计60～80有多少人
+127.0.0.1:6379> zcount zset01 60 80
+(integer) 3
+# zrank获取下标
+127.0.0.1:6379> zrank zset01 v4
+(integer) 3
+127.0.0.1:6379> zscore zset01 v3
+"80"
+```
+
+（5）zrevrank key values值，作用是逆序获得下标值
+
+```
+127.0.0.1:6379> zrevrank zset01 v4
+(integer) 0
+127.0.0.1:6379> zrevrank zset01 v3
+(integer) 1
+```
+
+（6）zrevrange
+
+```
+127.0.0.1:6379> zrevrange zset01 0 -1
+1) "v4"
+2) "v3"
+3) "v2"
+4) "v1"
+127.0.0.1:6379>
+```
+
+（7）zrevrangebyscore key 结果score开始score取反
+
+```
+127.0.0.1:6379> zrevrangebyscore zset01 90 60
+1) "v4"
+2) "v3"
+3) "v2"
+4) "v1"
+127.0.0.1:6379>
+```
 
 **更多文章已被Github收录：https://github.com/niutongg/JavaLeague**
 
