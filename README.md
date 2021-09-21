@@ -64,7 +64,7 @@
 
 #### MYSQL数据库
 
-* [小白必看的mysql基础6600字够了](https://mp.weixin.qq.com/s?__biz=MzUyODgxNzM0Nw==&tempkey=MTEzMV9pY0lrQnZwbW5BNEtNdzlBNnJQVmZMbTFsSzg0ZlI2VlM4QmhsNFNKMUdRMzhyc1NkYkV0bUZWS0p6MC1hX2xlZ2hFVXhQODRldEhueE9kRWlaaGNLX2FiSVlzcTBESWNydkdaQjhEMEtpaUR5TGdCelhqXzljTXgzLXFCbTljSVN6X0JndHUtd28xOEE2NndzZEtjQ3ZFOUx0dzI3UU03THpVUkNRfn4%3D&chksm=7a6bce884d1c479eef00492a13ae38966438d7a0f7272aa7a7535c4a6c08fbb57f472d780f58#rd)
+* [小白必看的mysql基础6600字够了](https://sourl.cn/pTHpsy)
 
 
 
