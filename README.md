@@ -2,6 +2,15 @@
 该仓涵盖Java基础、多线程高并发、mysql、Redis、JVM、数据结构与算法、计算机组成原理、计算机操作系统、计算机网络、微服务等知识。
 希望能和大家有点东西(大家记得Star哟）
 
+<p align="center">
+  <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-牛童学长-lightgrey.svg" alt="公众号"></a>
+  <a href="https://blog.csdn.net/realize_dream?spm=1001.2100.3001.5343"><img src="https://img.shields.io/badge/CSDN-博客-critical"></a>
+</p>
+
+
+
+
+
 
 
 ## 目录(善用Ctrl+F)：
@@ -71,5 +80,6 @@
 
 [电子书](https://github.com/niutongg/JavaLeague/blob/main/basic/20%20%E6%94%B6%E8%97%8F%E4%B9%A6%E7%B1%8D/e-book.md)
 
-更新中耐心等待。。。
+  <a name="公众号"></a>
 
+![](http://ww1.sinaimg.cn/large/006FuVcvgy1gv0vb8cmr3j60by0by74s02.jpg)
