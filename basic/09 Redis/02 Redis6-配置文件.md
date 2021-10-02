@@ -382,7 +382,7 @@ dir /usr/local/var/db/redis/
 # 3、volatile-random：在过期集合中移除随机key
 # 4、allkeys-random：移除随机的key
 # 5、volatile-ttl：移除那些TTL值最小的key，即那些最近要过期的key
-# 6、noeviction：不进行移除，针对写操作，只是返回错误信息（默认使用，实际开始修改的）
+# 6、noeviction：不进行移除，针对写操作，只是返回错误信息（默认使用，实际需要修改的）
 # volatile-lru -> Evict using approximated LRU, only keys with an expire set.
 # allkeys-lru -> Evict any key using approximated LRU.
 # volatile-lfu -> Evict using approximated LFU, only keys with an expire set.

@@ -73,6 +73,8 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 ### String
 
+> 使用场景：比如需要统计的场景，热点文章的访问量以及转发量、分布式锁setnx、Web集群session共享
+
 1、介绍
 
 字符串类型是Redis最基础的数据结构。键和值都是字符串类型的，而且其他几种的数据结构都是在字符串类型基础上构建的，所以学好字符串类型，几乎后面的很简单啦。String可以理解与Memcached一模一样的类型，一个key对应一个value。String类型是二进制安全的，可以包含简单字符串、复杂的字符串、JSON、XML、数字，但是字符串value最多可以是512M。
@@ -99,9 +101,9 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 （5）mset/mget/msetnx
 
-* mset：同时设置多个键和值，普通的set是报错如下
+* mset：批量操作
 
-* mget：获取多个值
+* mget：批量获取
 
   ```redis
   127.0.0.1:6379> mset k1 v1 k2 v2 k3 v3
@@ -151,17 +153,57 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 ### List
 
-（1）Lpush/rpush/Lrange
+> 发布与订阅或者消息队列、慢查询
 
-* Lpush基本使用：lpush list 0 1 2 3 4 5
-* Lrange基本使用：lrange list 0 -1
+使用List命令(rpush和Lpop)实现：队列（右进左出）
 
-（2）Lpop/rpop
+```
+127.0.0.1:6379> rpush list02 1 2 3 4 5
+(integer) 5
+127.0.0.1:6379> lpop list02
+"1"
+127.0.0.1:6379> lpop list02
+"2"
+127.0.0.1:6379> lpop list02
+"3"
+127.0.0.1:6379> lpop list02
+"4"
+127.0.0.1:6379> lpop list02
+"5"
+```
 
-* Lpop：取出是先进后出（lpop list是一个一个取出来的）
-* rpop：取出是先进先出
+![6AB38AC5-0A18-49FA-B43F-5FDA342092B2.png](http://ww1.sinaimg.cn/large/006FuVcvgy1gupgfqrj5xj60xw07agmd02.jpg)
 
-（3）lindex,按照索引下标获取元素
+使用List命令(rpush和rpop)实现：栈（右进右出）
+
+```
+127.0.0.1:6379> rpush list01 1 2 3 4 5 
+(integer) 5
+127.0.0.1:6379> rpop list01
+"5"
+127.0.0.1:6379> rpop list01
+"4"
+127.0.0.1:6379> rpop list01
+"3"
+127.0.0.1:6379> rpop list01
+"2"
+127.0.0.1:6379> rpop list01
+"1"
+```
+
+![B7ADFB85-0FF2-4300-A3E8-F18801007E26.png](http://ww1.sinaimg.cn/large/006FuVcvgy1gupgjdwkfxj60si07qaap02.jpg)
+
+（3）lindex,按照索引下标获取元素(下标0开始)
+
+```
+127.0.0.1:6379> rpush list02 1 2 3 4 5
+(integer) 5
+127.0.0.1:6379> lindex list02 0
+"1"
+127.0.0.1:6379> lindex list02 2
+"3"
+127.0.0.1:6379>
+```
 
 （4）llen获取长度：llen list
 
@@ -193,6 +235,10 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 
 ### Set
+
+> 要存储的数据不能重复以及需要获取多个数据源的交集和并集的这样场景。（比如：微信微博的收藏、点赞、标签）
+
+Redis的set相当于Java语言的HashSet，它内部结构的键值对是无序的唯一的，有去重功能。
 
 （1）sadd/smembers/sismember
 
@@ -263,9 +309,11 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 
 
-### Hash
+### Hash(字典)
 
-有点特殊，但是常用：KV模式不变的，但V是一个键值对
+> 场景：适合对象数据的存储、电商购物车
+
+有点特殊，但是常用：KV模式不变的，但V是一个键值对。Hash的字典相当于Java语言的HashMap，它是无序的字典。底层也是：数组+链表二维结构。
 
 （1）hset/hget/hmset/hmget/hgetall/hdel
 
@@ -323,13 +371,17 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
 
 （4）hincrby / hincrbyfloat
 
+
+
 （5）hsetnx（有了就插不了，没有就可以）
 
 
 
 ### Sorted set(ZSet)
 
-在set基础上，加上一个score值，之前set是k1 v1 k2 v2,现在zset是k1 score v1 score v2
+> 场景：比如需要对某个数据全重进行排序。如：直播系统实时排序、粉丝列表等（zset存储粉丝列表，value值是粉丝用户ID，score是关注时间，然后可以对按照关注时间进行排序）
+
+类似Java的SortedSet和HashMap的结合体，一方面是set保证内部value唯一性，另一方面可以给每个value赋予一个score，代表这个value的排序全重。底层：**跳跃列表的数据结构**
 
 （1）zadd/zrang/(添加/获取)
 
@@ -454,6 +506,8 @@ limit获取部分的
 4) "v1"
 127.0.0.1:6379>
 ```
+
+
 
 **更多文章已被Github收录：https://github.com/niutongg/JavaLeague**
 
