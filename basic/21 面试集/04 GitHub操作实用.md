@@ -66,3 +66,20 @@ https://github.com/codingXiaxw/seckill/blob/master/src/main/java/cn/codingxiaxw/
 * 如北京的Java方法用户
   * location:beijing language:java
 
+## Typora快捷键
+
+| Markdown | 图标 | 快捷键           |
+| -------- | ---- | ---------------- |
+| 撤销     |      | Ctrl /⌘+Z        |
+| 重做     |      | Ctrl /⌘+Y        |
+| 加粗     |      | Ctrl /⌘+B        |
+| 斜体     |      | Ctrl /⌘+I        |
+| 标题     |      | Ctrl /⌘+Shift +H |
+| 有序列表 |      | Ctrl /⌘+Shift +O |
+| 无序列表 |      | Ctrl /⌘+Shift +U |
+| 待办列表 |      | Ctrl /⌘+Shift +C |
+| 插入代码 |      | Ctrl /⌘+Shift +K |
+| 插入链接 |      | Ctrl /⌘+Shift +L |
+| 插入图片 |      | Ctrl /⌘+Shift +G |
+| 查找     |      | Ctrl /⌘+F        |
+| 替换     |      | Ctrl /⌘+G        |
