@@ -25,7 +25,7 @@ string s1 = "hello string";
 
 Java 6及以前，字符串常量池存放在永久代
 
-Java7中将字符串常量池的位置调整到Java堆中
+Java7 中将字符串常量池的位置调整到Java堆中
 
 * 所有的字符串都保存在堆中，和其他普通对象一样，这样可以让你在进行调优引用是仅需要调整堆大小就可以
 * 字符串常量池概念使用的比较多，但是这个改动使得我们有足够的理由让我们重写考虑在Java7使用string.intern()。
@@ -101,9 +101,9 @@ Java 8 元空间，字符串常量在堆
 
 面试题：new String("a") + new String("b")会创建几个对象？在常量池不存在ab的
 
-JDK6以前有5个对象
+JDK6 以前有5个对象
 
-JDK7以后有4个对象
+JDK7 以后有4个对象
 
 ```java
 public class StringTest05 {
