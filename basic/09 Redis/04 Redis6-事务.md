@@ -1,4 +1,4 @@
-### Redis 事务常用命令
+#### Redis 事务常用命令
 
 | 序号 |        命令        | 描述                                                         |
 | :--: | :----------------: | ------------------------------------------------------------ |
@@ -8,7 +8,11 @@
 |  4   |      UNWATCH       | 取消watch命令对所有key的监视                                 |
 |  5   | WATCH key [key...] | 监视一个(或多个)key，如果在事务执行之前这个(或这些)key，被其他命令所改动，那么事务被打断 |
 
+#### 事务介绍：
 
+* Redis 的事务是通过multi、Exec、Discard 和 watch 这四个命令来完成的
+* Redis 的单个命令都是原子性的，所以这里确保事务性的对象是集合命令
+* 
 
 watch
 
@@ -19,7 +23,7 @@ watch
 
 
 
-总结：
+#### 总结：
 
 （1）开启：以MULTI开始一个事务
 
@@ -28,9 +32,3 @@ watch
 （3）执行：由EXEC命令触发事务
 
 
-
-
-
-**更多文章已被Github收录：https://github.com/niutongg/JavaLeague**
-
-![4B544609-FA1C-4FE1-B99A-041A94838FAF.png](http://ww1.sinaimg.cn/large/006FuVcvgy1gulvyk74wcj61kc1mgdox02.jpg)

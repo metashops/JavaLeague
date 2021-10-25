@@ -184,7 +184,7 @@ auto-aof-rewrite-min-size 64mb
 # If unsure, use "everysec".
 
 # 3、appendfsync
-# 3.1 always：同步持久化每次发生数据变更会被立即立即到磁盘，这种方式性能较差但保证数据的完整性
+# 3.1 always：同步持久化每次发生数据变更会被立即到磁盘，这种方式性能较差但保证数据的完整性
 # 3.2 everysec：出厂默认推荐，异步操作，每秒记录，如果一秒内宕机，有数据丢失
 # 3.3 no
 # appendfsync always
@@ -242,8 +242,14 @@ auto-aof-rewrite-min-size 64mb
 
 （4）可以只使用AOF？不建议，因为RDB更适合用于备份数据库快速重启，而且不会有AOF可能潜在bug，
 
+### 常见缓存淘汰策略
+
+常见缓存淘汰算法：FIFO先进先出、LRU最近最少使用、LFU最近使用频率最低
+
+几种策略：
+
+* 
+
 
 
 **更多文章已被Github收录：https://github.com/niutongg/JavaLeague**
-
-![4B544609-FA1C-4FE1-B99A-041A94838FAF.png](http://ww1.sinaimg.cn/large/006FuVcvgy1gulvyk74wcj61kc1mgdox02.jpg)

@@ -68,18 +68,18 @@ https://github.com/codingXiaxw/seckill/blob/master/src/main/java/cn/codingxiaxw/
 
 ## Typora快捷键
 
-| Markdown | 图标 | 快捷键           |
-| -------- | ---- | ---------------- |
-| 撤销     |      | Ctrl /⌘+Z        |
-| 重做     |      | Ctrl /⌘+Y        |
-| 加粗     |      | Ctrl /⌘+B        |
-| 斜体     |      | Ctrl /⌘+I        |
-| 标题     |      | Ctrl /⌘+Shift +H |
-| 有序列表 |      | Ctrl /⌘+Shift +O |
-| 无序列表 |      | Ctrl /⌘+Shift +U |
-| 待办列表 |      | Ctrl /⌘+Shift +C |
-| 插入代码 |      | Ctrl /⌘+Shift +K |
-| 插入链接 |      | Ctrl /⌘+Shift +L |
-| 插入图片 |      | Ctrl /⌘+Shift +G |
-| 查找     |      | Ctrl /⌘+F        |
-| 替换     |      | Ctrl /⌘+G        |
+| Markdown | 图标 | 快捷键     |
+| -------- | ---- | ---------- |
+| 撤销     |      | ⌘+Z        |
+| 重做     |      | ⌘+Y        |
+| 加粗     |      | ⌘+B        |
+| 斜体     |      | ⌘+I        |
+| 标题     |      | ⌘+Shift +H |
+| 有序列表 |      | ⌘+Shift +O |
+| 无序列表 |      | ⌘+Shift +U |
+| 待办列表 |      | ⌘+Shift +C |
+| 插入代码 |      | ⌘+Shift +K |
+| 插入链接 |      | ⌘+Shift +L |
+| 插入图片 |      | ⌘+Shift +G |
+| 查找     |      | ⌘+F        |
+| 替换     |      | ⌘+G        |

@@ -5,7 +5,7 @@ Map接口有5个常见实现子类：HashMap、Hashtable、LinkedHashMap、TreeM
 JDK 8 为例，特点：
 
 * Map用于保存具有映射关系的数据：Key-Value
-* Map中的Key和Value可以时任何引用类型的数据，会封装到HashMap$Node对象中。
+* Map中的Key和Value可以是任何引用类型的数据，会封装到HashMap$Node对象中。
 * Map中的Key不允许重复，原因和HashSet一样
 * Map中的Value可以重复
 * Map中的Key可以为null，value也可以为null，注意Key为null只能有一个，value为null可以多个
@@ -384,7 +384,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
                 ((k = p.key) == key || (key != null && key.equals(k))))
                 e = p;
             //(2)如果已经是红黑树，就按照红黑树方式处理
-            //这里处理的思路：如果是红黑树（该位置的hash相同但是，但是后面是个链表，
+            //这里处理的思路：如果是红黑树（该位置的hash相同，但是后面是个链表，
             //那么for循环：将你传入hash值相同的进行一个一个比较，如果都不相同，直接挂在最后面即可）
             else if (p instanceof TreeNode)
                 e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);

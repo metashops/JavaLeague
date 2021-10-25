@@ -122,7 +122,7 @@ GC Roots包括以下几个类：
 
 > 1、你是如何理解 System.gc()的？
 
-默认情况下，通过system.gc() 或 Runtime.getRuntime().gc() 的调用，会显示触发Full GC，同时对老年代和新生代进行回收，尝试释放被爹丢弃对象占用的内存。但是system.gc() 不一定会立刻执行，所以无法保证垃圾收集器的调用。
+默认情况下，通过system.gc() 或 Runtime.getRuntime().gc() 的调用，会显示触发Full GC，同时对老年代和新生代进行回收，尝试释放被丢弃对象占用的内存。但是system.gc() 不一定会立刻执行，所以无法保证垃圾收集器的调用。
 
 ```java
 public class GCtest01 {

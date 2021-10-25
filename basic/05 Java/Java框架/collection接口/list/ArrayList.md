@@ -45,7 +45,7 @@ public ArrayList(){this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;}
     }
 ```
 
-总结：看懂ArrayList源码，只要你知道底层使用数组实现的，明白grow()方法即可，其他步骤都是判断的，核心就是数组的拷贝，这样就可以减轻小白看源码的痛苦了。
+总结：看懂ArrayList源码，只要你知道底层使用数组实现的，明白grow()方法即可，其他步骤都是判断的，核心就是数组的拷贝，这样就可以减轻小白看源码的痛苦了。**浅拷贝：对基本数据类型进行值传递，对引用数据类型进行引用传递般的拷贝，此为浅拷贝。深拷贝：对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝**
 
 
 
@@ -100,4 +100,22 @@ private int newCapacity(int minCapacity) {
 * 在项目中，根据业务灵活选择，也可以这样，一个模块使用ArrayList，另一个使用LinkedList
 
 
+
+### 5、ArrayList 和 LinkedList 区别？
+
+底层实现不同：
+
+ArrayList是基于数组实现，可以以O(1)时间复杂度对元素进行随机访问。删除在最坏情况是O(n)。
+
+LinkedList底层基于链表实现的，对于删除、插入时间复杂为O(1)。
+
+#### 6、高并发集合
+
+线程安全：vector & Hashtable 都是线程安全的，方法被synchronized修饰
+
+非线程安全：ArrayList & HashMap
+
+在大量并发情况下如何提高集合的效率和安全？
+
+使用JCU包下的工具类：
 

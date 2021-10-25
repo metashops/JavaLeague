@@ -32,7 +32,7 @@ String底层声明为final是不可被继承的，String在JDK8及以前内部�
 #### 5、StringBuffer 和 StringBuilder区别？
 
 * StringBuffer是线程安全的，底层的方法被synchronized修饰的，效率低于StringBuilder
-* 由于StringBuilder是线程不安全的，效率比StringBuffer更有优势，但线程不安全
+* 由于StringBuilder 是线程不安全的，效率比StringBuffer更有优势，但线程不安全
 
 #### 6、Object类有哪些方法？
 

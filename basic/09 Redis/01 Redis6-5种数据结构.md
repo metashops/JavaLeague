@@ -32,7 +32,7 @@ tar -zxvf redis-6.2.1.tar.gz -C /opt/module/
   * 第一步首先：备份redis.conf，该文件在你自定义安装的目录redis-6.2.1这个目录下
   * 第二步：这里复制到`sudo cp redis.conf /etc/redis.conf`
   * 第三步：`vi redis.conf`将 daemonized no 该为 yes
-  * 第四步：用刚才修改的文件启动redis，进入默认安装的位置执行/uer/local/bin下启动命令：`redis-server /etc/redis.conf`
+  * 第四步：用刚才修改的文件启动redis，进入默认安装的位置执行/usr/local/bin下启动命令：`redis-server /etc/redis.conf`
   * 第五步：查看进程`ps -ef | grep redis`
 
 （7）关闭
